@@ -2,22 +2,22 @@ pipeline {
 	agent any
 	stages {
 		stage ('build') {
-			...
+			echo"first"
 		}
 		stage ('test: integration-&-quality') {
-			...
+			echo"second"
 		}
 		stage ('test: functional') {
-			...
+			echo"third"
 		}
 		stage ('test: load-&-security') {
-			...
+			echo"four"
 		}
 		stage ('approval') {
-			...
+			echo"five"
 		}
 		stage ('deploy:prod') {
-			...
+			echo"six"
 		}
 	}
 }
